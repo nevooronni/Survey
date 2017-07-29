@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="utf-8">
+    <!--This meta tag is for device responsiveness-->
+    <meta nanme="viewport" content="width=device=width, initial-scale=1.0">
+    <title>Survey</title> 
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!--custom stylesheet-->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+     <!--javascript--><!--putting script files down here to make the website appear to be loading faster because js is responsible for fuctionality-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous">    
+    </script>
+    
+  </head>
+
+  <body>
+
+    <div class="container">
+    <!--form section-->
+      <h1 class="text-center">SURVEY FORM</h1>
+      <div id="blanks">
+        <form>
+          <div class="form-group">
+            <label for="name">A Name</label>
+            <input id="name" class="form-control" type="text">
+          </div>  
+          <div class="form-group">
+            <label for="food">Favorite Food</label>
+            <input id="food" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="music">Favorite Music</label>
+            <input id="music" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="color">Favorite color</label>
+            <input id="color" class="form-control" type="text"> 
+          </div>
+          <div class="form-group">
+            <label for="date">Date Of Birth</label>
+            <input id="date" class="form-control" type="date"> 
+          </div>
+
+          <select class="form-control" id="selectboxes">
+            <option>Arsenal</option>
+            <option>Man U</option>
+            <option>Chelsea</option>
+            <option>Man City</option>  
+          </select>
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="girl" value="brunette" checked>
+              Brunette
+            </label>
+          </div>
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="girl" value="blonde">
+              Blonde
+            </label>
+          </div>
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="girl" value="red head">
+              Red Head
+            </label>
+          </div>
+
+          <button type="submit" class="btn">SUBMIT</button>
+        </form>
+      </div>
+    </div>  
+
+    <div id="result">
+      <p>Name: <span id="input1"></span></p>
+      <p>Favorite Food: <span id="input2"></span></p>
+      <p>Favorite Music: <span id="input3"></span></p>
+      <p>Favorite Color: <span id="input4"></span></p>
+      <p>Date of Birth: <span id="input5"></span></p>
+      <p>Favorite Team: <span id="input6"></span></p>
+      <p>Type Of Girl: <span id="input7"></span></p>
+      <button type="button" class="btn" id="back">BACK</button>
+    </div>
+
+    <!--custom js file-->
+    <script src="js/script.js"></script>
+  </body>
+</html>
