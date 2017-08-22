@@ -16,3 +16,10 @@ p, span {
 span {
   font-weight: bold;
 }
+
+#array {
+  position: relative;
+  top: 30px;
+  left: 165px;
+  display: none;
+}
